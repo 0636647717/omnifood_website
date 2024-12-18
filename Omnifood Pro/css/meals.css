@@ -1,0 +1,118 @@
+.meals {
+  padding: 8rem 0;
+}
+
+.meals-container > .meals-box {
+  overflow: hidden;
+  border-radius: 11px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.meals-container > .meals-box:hover {
+  transform: translateY(-20px);
+  background-color: #fdf2e9;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.075);
+}
+
+.meals-container > .meals-box > img {
+  width: 100%;
+}
+
+.meals-container > .meals-box > .meal-content {
+  padding: 2.4rem 1.6rem 1.6rem;
+
+  /* position: relative; */
+}
+
+.meals-container > .meals-box > .meal-content > .meals-subheading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+
+  margin-bottom: 2.4rem;
+}
+
+.meals-container > .meals-box > .meal-content > .Vegetarian,
+.meals-box > .meal-content > .vegan-paleo > .vegan,
+.meals-box > .meal-content > .vegan-paleo > .paleo {
+  padding: 0.4rem 1.6rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fdf2e9;
+  border-radius: 80px;
+}
+
+.meals-container > .meals-box > .meal-content > .Vegetarian,
+.meals-box > .meal-content > .vegan-paleo {
+  margin-bottom: 1.6rem;
+}
+
+.meals-container > .meals-box > .meal-content > .Vegetarian,
+.meals-box > .meal-content > .vegan-paleo > .vegan {
+  background-color: #a15818;
+}
+
+.meals-box > .meal-content > .vegan-paleo > .paleo {
+  background-color: #205329;
+}
+
+/* .meals-container > .meals-box > .meal-content > .meal-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+} */
+
+.meals-container > .meals-box > .meal-content > .list > .meal-list-item {
+  font-size: 1.8rem;
+
+  /* Aligning our icon */
+  display: flex;
+  gap: 1.4rem;
+}
+
+.meals-container > .meals-box > .meal-content > .list > .meal-list-item i {
+  color: #e67e22;
+}
+
+/* Diet list */
+
+.meals-container > .diet-box {
+  padding: 2.4rem;
+  border-radius: 11px;
+
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.meals-container > .diet-box > .diet-heading {
+  text-decoration: underline;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+
+  margin-bottom: 3.2rem;
+}
+
+/* .meals-container > .diet-box > .diet-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+} */
+
+.meals-container > .diet-box > .list > li {
+  font-size: 1.8rem;
+
+  display: flex;
+  gap: 1.4rem;
+}
+
+.meals-container > .diet-box > .list > li i {
+  color: #e67e22;
+}

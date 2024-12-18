@@ -1,0 +1,79 @@
+.main-header {
+  background-color: #fdf2e9;
+  padding: 0 3.2rem;
+  height: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+/* Mobile nav */
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.mobile-icon {
+  /* font-size: 4.8rem; */
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.mobile-icon[name="close-outline"] {
+  display: none;
+}
+/* Sticky header */
+
+.sticky .main-header {
+  background-color: rgba(253, 242, 233, 0.4);
+  width: 100%;
+  height: 9.6rem;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  /* padding-top: 0;
+  padding-bottom: 0; */
+
+  /* Floating our sticky on top of the page */
+  z-index: 99;
+}
+
+.sticky .hero-section {
+  margin-top: 8rem;
+}
+
+.main-header > img {
+  height: 2rem;
+}
+
+.main-header > .main-nav > .header-list {
+  list-style: none;
+
+  display: flex;
+  gap: 1.6rem;
+}
+
+.main-nav > .header-list > li > .header-link:link,
+.main-nav > .header-list > li > .header-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #a15818;
+  border-radius: 80px;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+}
+
+.main-nav > .header-list > li > .header-link:hover,
+.main-nav > .header-list > li > .header-link:active {
+  box-shadow: 0 0 15px 5px rgba(161, 88, 24, 0.2);
+}

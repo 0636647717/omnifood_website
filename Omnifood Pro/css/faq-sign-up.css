@@ -1,0 +1,174 @@
+.faq-sign-up {
+  padding: 8rem 0;
+}
+
+.faq-container > .faq-heading {
+  font-size: 7.4rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 800;
+
+  margin-bottom: 4.8rem;
+}
+
+.faq-container > .faq-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.faq-container > .faq-main-content > .faq-box {
+  padding: 1.6rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  column-gap: 1.6rem;
+  row-gap: 2.4rem;
+
+  box-shadow: 0 1.4rem 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container > .faq-main-content > .faq-box > .faq-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #767676;
+}
+
+.faq-container > .faq-main-content > .faq-box > .faq-question {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.faq-container > .faq-main-content > .faq-box > i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.faq-box > .faq-hidden-box {
+  grid-column: 2;
+  display: none;
+}
+
+.faq-box > .faq-hidden-box > p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+
+  margin-bottom: 3.2rem;
+}
+
+.faq-box > .faq-hidden-box > .faq-list {
+  list-style: circle;
+  margin-left: 2rem;
+}
+
+.faq-box > .faq-hidden-box > .faq-list li {
+  font-size: 1.4rem;
+}
+
+/* Hiding our hidden box */
+
+.open-hidden {
+  border-top: 8px solid #a15818;
+}
+
+.open-hidden .faq-hidden-box {
+  display: block;
+}
+
+/* Sign up styles */
+
+.sign-in {
+  /* background-color: #a15818; */
+  padding: 1.6rem;
+  width: 40rem;
+  border-radius: 3px;
+  align-self: start;
+  justify-self: center;
+
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-header {
+  margin-bottom: 3.2rem;
+}
+
+.sign-in > .sign-in-header > .sign-in-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+
+  margin-bottom: 0.8rem;
+}
+
+.sign-in > .sign-in-header > .sign-in-description {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.sign-in > .form > input {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  border: 2px solid #767676;
+  border-radius: 3px;
+  font-family: inherit;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+  margin-bottom: 1.4rem;
+}
+
+.sign-in > .form > input::placeholder {
+  color: #767676;
+}
+
+.sign-in > .forgot-password {
+  margin-bottom: 2.4rem;
+}
+
+.sign-in > .forgot-password a {
+  text-decoration: none;
+  color: #1864ab;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.sign-in > .sign-in-link {
+  margin-bottom: 1.6rem;
+}
+
+.sign-in > .sign-in-link > a,
+.sign-in > .apple-link > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 80px;
+  padding: 1.2rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.sign-in > .sign-in-link > a {
+  background-color: #1864ab;
+  color: #fff;
+}
+
+.sign-in > .or-text {
+  font-size: 1.6rem;
+  text-align: center;
+
+  margin-bottom: 1.6rem;
+}
+
+.sign-in > .apple-link > a {
+  color: #767676;
+  border: 2px solid currentColor;
+}
+
+.sign-in > .apple-link > a i {
+  color: #000;
+  font-size: 1.8rem;
+  margin-right: 1.6rem;
+}

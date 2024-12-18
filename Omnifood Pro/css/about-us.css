@@ -1,0 +1,20 @@
+.about-section {
+  padding: 8rem 0;
+}
+
+.about-section > .about-box > span {
+  font-size: 3.6rem;
+  display: block;
+  text-align: center;
+  color: #333;
+  text-decoration: underline;
+  /* border-bottom: 2px solid currentColor;
+  padding-bottom: 2rem; */
+
+  margin-bottom: 3.2rem;
+}
+
+.about-section > .about-box > .about-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}

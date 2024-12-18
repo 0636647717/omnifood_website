@@ -1,0 +1,106 @@
+.img-features {
+  padding: 0 0 4rem 0;
+}
+
+.img-features > .img-features-inner > .img-feature-container {
+  /* background-color: blueviolet; */
+  /* padding: 4.8rem; */
+  display: flex;
+  justify-content: center;
+}
+
+.img-features
+  > .img-features-inner
+  > .img-feature-container
+  > .feature-img-box {
+  /* background-color: aqua; */
+  padding: 0 3.2rem;
+  width: 100rem;
+  height: 10rem;
+  align-items: center;
+
+  position: relative;
+}
+
+.img-features
+  > .img-features-inner
+  > .img-feature-container
+  > .feature-img-box
+  img {
+  width: 100%;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* The Carousel styles */
+
+.img-feature-container > .feature-img-box > .btn {
+  background: none;
+  border: 2px solid #a15818;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+
+  /* Centering our icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0.8rem 0.8rem 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-feature-container > .feature-img-box > .btn:hover {
+  background-color: #a15818;
+}
+
+.img-feature-container > .feature-img-box > .btn:hover i {
+  color: #fdf2e9;
+}
+
+.img-feature-container > .feature-img-box > .right {
+  right: 0;
+
+  transform: translate(50%, -50%);
+}
+
+.img-feature-container > .feature-img-box > .left {
+  left: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+.img-feature-container > .feature-img-box > .btn i {
+  font-size: 1.6rem;
+  color: #a15818;
+}
+
+/* Slides */
+
+.feature-slides {
+  cursor: pointer;
+  display: flex;
+  gap: 1.6rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translate(-50%, 2.4rem);
+}
+
+.slide-item {
+  border: 5px solid #a15818;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.slide--item {
+  background-color: #a15818;
+}

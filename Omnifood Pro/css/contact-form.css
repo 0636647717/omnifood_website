@@ -1,0 +1,167 @@
+.contact-form {
+  padding: 8rem 0;
+}
+
+.contact-form > .contact-form-inner > .contact-header > .contact-text {
+  font-size: 3rem;
+  color: #a15818;
+
+  margin-bottom: 4.8rem;
+}
+
+.main-form-container {
+  /* background-color: aqua;
+  padding: 1.2rem;
+
+  border-radius: 11px;
+  overflow: hidden; */
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  gap: 3.2rem;
+}
+
+.main-form-container > .form-box {
+  /* background-color: aqua; */
+  padding: 1.6rem;
+}
+
+.main-form-container > .form-box > .form-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+
+  margin-bottom: 3.2rem;
+}
+
+/* Form styles */
+
+.main-form-container .form-box .group-form {
+  margin-bottom: 2.4rem;
+}
+
+.main-form-container .form-box .group-form > input,
+.main-form-container .form-box .group-form > select {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 3px solid currentcolor;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.5s;
+}
+
+.main-form-container .form-box .group-form > input::placeholder,
+.main-form-container .form-box .group-form > textarea::placeholder {
+  color: #bbb;
+}
+
+.main-form-container .form-box .group-form > input:focus::placeholder,
+.main-form-container .form-box .group-form > textarea:focus::placeholder {
+  /* Removing input text after focus */
+  color: transparent;
+}
+
+.main-form-container .form-box .group-form > input:focus,
+.main-form-container .form-box .group-form > select:focus {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #a15818;
+}
+
+.main-form-container .form-box .group-form > label {
+  color: #a15818;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 10px;
+  transition: all 0.5s;
+
+  /* Removing our label */
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+}
+
+.main-form-container .form-box .group-form > select {
+  cursor: pointer;
+}
+
+.main-form-container .form-box .group-form > input:focus + label,
+.main-form-container .form-box .group-form > textarea:focus + label {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+
+  /* Giving our label a margin bottom */
+  transform: translateY(20px);
+}
+
+.main-form-container .form-box .group-form > textarea {
+  width: 100%;
+  height: 20rem;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border-radius: 3px;
+  border: 3px solid #555;
+  transition: all 0.5s;
+}
+
+.main-form-container .form-box .group-form > textarea:focus {
+  border: 3px solid #a15818;
+}
+
+/* Form btn */
+
+.main-form-container > .form-box > .submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.main-form-container > .form-box > .submit-btn > .form-btn {
+  border: 2px solid #a15818;
+  background-color: #a15818;
+  padding: 1.4rem 4.8rem;
+  border-radius: 80px;
+  color: #fdf2e9;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.main-form-container > .form-box > .submit-btn > .form-btn:hover {
+  opacity: 80%;
+}
+
+.form-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/eating.webp);
+  height: 100%;
+  border-radius: 9px;
+  /* width: auto; */
+  /* filter: brightness(60%); */
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.form-img::after {
+  content: "";
+  background-color: #fff;
+  width: 20rem;
+  height: 90rem;
+
+  /* display: none; */
+
+  position: absolute;
+  top: -12%;
+  left: -29%;
+  transform: rotate(8deg);
+
+  /* z-index: 999; */
+}

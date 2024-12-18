@@ -1,0 +1,177 @@
+/* 
+Typography
+
+Fonts
+10,12,14,16,18,20,22,24,30,36,44,52,62,74,86,98
+
+Spacing
+2,4,8,12,16,24,32,48,64,80,96,128,144,164
+
+Colors
+- Primary: 
+ #e67e22
+ #51cf66
+ #1864ab
+
+ - Tints: 
+ #fdf2e9
+ #f8d8bd 
+
+ - Shades: 
+ #a15818
+ #205329
+
+ Greys: 
+ - #333 ( darker  )
+ - #555 ( lighter )
+ - #767676 ( Allowed on white )
+ - #bbb ( used on input )
+
+ Border radius
+ - 3px
+ - 9px
+ - 11px
+
+ Line height 
+ - 1
+ - 1.6
+
+ Font weight 
+ - 400
+ - 500
+ - 600
+ - 700
+ - 800
+
+ Letter Spacing
+ - ( -1px )
+
+ Transition: all 0.5s;
+
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  line-height: 1;
+
+  overflow-x: hidden;
+}
+
+.container {
+  /* background-color: burlywood; */
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* Main Headings */
+
+.secondary-heading,
+.tertiary-heading {
+  color: #333;
+  line-height: 1.1;
+}
+
+.secondary-heading {
+  font-size: 3.6rem;
+}
+
+.tertiary-heading {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+
+  margin-bottom: 6.4rem;
+}
+
+/* Small heading box */
+
+.heading-box {
+  margin-bottom: 4.8rem;
+}
+
+/* Subheading */
+
+.small-subheading {
+  text-transform: uppercase;
+  color: #a15818;
+  font-weight: 800;
+  font-size: 1.4rem;
+  display: block;
+
+  margin-bottom: 2.4rem;
+}
+
+.features-heading {
+  font-size: 3.6rem;
+  text-align: center;
+  text-decoration: underline;
+
+  margin-bottom: 4.8rem;
+}
+
+/* Grid setting */
+
+.grid {
+  display: grid;
+
+  column-gap: 3.2rem;
+  row-gap: 4.8rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* List styles */
+
+.list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Helper classes */
+
+.margin-right-sm {
+  margin-right: 3.2rem;
+}

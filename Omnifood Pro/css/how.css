@@ -1,0 +1,72 @@
+.how-section {
+  padding: 0 0 8rem 0;
+}
+
+.how-container > .how-text-box > span {
+  font-size: 6.2rem;
+  font-weight: 700;
+  display: block;
+  color: #767676;
+  /* color: #ddd; */
+
+  margin-bottom: 3.2rem;
+}
+
+.how-container > .how-text-box > .inner-how-heading {
+  font-size: 3rem;
+  color: #333;
+  font-weight: 700;
+
+  margin-bottom: 1.6rem;
+}
+
+.how-container > .how-text-box {
+  align-self: center;
+}
+
+.how-container > .how-text-box > .how-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.how-container > .how-img-box {
+  text-align: center;
+
+  position: relative;
+}
+
+/* Implementing background circles */
+
+.how-container > .how-img-box::before,
+.how-container > .how-img-box::after {
+  content: "";
+  border-radius: 50%;
+  /* display: block; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.how-container > .how-img-box::before {
+  background-color: #fdf2e9;
+  width: 60%;
+  padding-bottom: 60%;
+
+  /* Locating our circle behind the img */
+  z-index: -2;
+}
+
+.how-container > .how-img-box::after {
+  background-color: #f8d8bd;
+  width: 50%;
+  padding-bottom: 50%;
+
+  /* Locating our circle behind the img */
+  z-index: -1;
+}
+
+.how-container > .how-img-box img {
+  width: 30%;
+}

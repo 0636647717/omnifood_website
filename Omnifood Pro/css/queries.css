@@ -1,0 +1,255 @@
+/* 1392px  X-large screens */
+
+@media (max-width: 87em) {
+  .hero-text-container > .hero-text-box > .primary-heading {
+    font-size: 5.2rem;
+  }
+}
+
+/* 1200px large screens */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero-text-container > .hero-text-box > .primary-heading {
+    font-size: 4.4rem;
+  }
+}
+
+/* 912px medium screens */
+
+@media (max-width: 57em) {
+  html {
+    font-size: 50%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: #a81f1f;
+    /* z-index: 9999; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transform: translateX(100%);
+  }
+
+  .open-nav .btn-mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    transform: translateX(0);
+  }
+  .main-header > .main-nav > .header-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .main-nav > .header-list > li > .header-link:link,
+  .main-nav > .header-list > li > .header-link:visited {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+
+  .open-nav .mobile-icon[name="close-outline"] {
+    display: block;
+    /* z-index: 9999; */
+  }
+
+  .open-nav .mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .pricing-plan-content > .pricing-plan-box {
+    width: 85%;
+  }
+
+  .form-img::after {
+    top: -7%;
+    left: -32%;
+    /* transform: rotate(8deg); */
+  }
+}
+
+/* 800px small screens */
+
+@media (max-width: 50em) {
+  .hero-text-container > .hero-text-box {
+    /* background-color: blueviolet; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .meals-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meals-container > .diet-box {
+    /* background-color: aqua; */
+    grid-column: span 2;
+    justify-items: center;
+  }
+
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-plan-content > .pricing-plan-box {
+    width: 100%;
+    /* margin: auto; */
+  }
+
+  /* .faq-main-content {
+    justify-self: center;
+  } */
+
+  .faq-container {
+    margin-bottom: 4.8rem;
+  }
+
+  .faq-sign-up-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-box {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .footer > .main-footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .footer > .main-footer > .footer-nav-col {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .footer > .main-footer > .footer-logo-col {
+    grid-column: span 3;
+  }
+
+  .footer > .main-footer > .footer-contact-col {
+    grid-column: span 3;
+  }
+}
+
+/* 448px  X-small screens */
+
+@media (max-width: 28em) {
+  .grid--2-col,
+  .grid--3-col,
+  .grid--4-col {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-container > .hero-text-box > .hero-link a {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .about-section > .about-box > span {
+    font-size: 2.4rem;
+  }
+
+  .secondary-heading {
+    font-size: 2rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2rem;
+  }
+
+  .small-subheading {
+    font-size: 1.2rem;
+  }
+
+  .features-heading {
+    font-size: 2.4rem;
+  }
+
+  .how-container > .how-text-box > span {
+    font-size: 3.6rem;
+  }
+
+  .how-container > .how-text-box > .inner-how-heading {
+    font-size: 2rem;
+  }
+
+  /* .how-img-box:nth-child(2) {
+    grid-row: 1;
+  } */
+  .how-container > .how-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .how-container > .how-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-box > .gallery-img > img {
+    height: 9rem;
+  }
+
+  .meals-container > .diet-box {
+    grid-column: span 1;
+  }
+
+  .slide-item {
+    border: 4px solid #a15818;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .faq-container > .faq-heading {
+    font-size: 3.6rem;
+  }
+
+  .main-form-container {
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+
+  .contact-form > .contact-form-inner > .contact-header > .contact-text {
+    font-size: 2rem;
+  }
+
+  .form-img {
+    height: 35rem;
+    grid-row: 1;
+    border-radius: 0;
+
+    transform: skewY(-6deg);
+    transform-origin: top left;
+  }
+
+  .form-img::after {
+    display: none;
+  }
+}
